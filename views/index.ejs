@@ -3,40 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <title>Url Shortener</title>
 </head>
 <body>
     <h1>BismiALLAHir ROHMANIR ROHIYM</h1>
+    <div class="container">
 
-    <hr>
-    <hr>
-    <hr>
-    <hr>
-    <hr>
-    <h1>URL Shrinker</h1>
-    <form action="" method="POST">
-        <label for="fullUrl">Url</label>
-        <input type="url" name="fullUrl" id="fullUrl">
-        <button type="submit">Shrink</button>
-    </form>
+        <hr>
+        <hr>
+        <h1>URL Shrinker</h1>
+        <form action="/shortUrls" method="POST" class="my-4 form-inline">
+            <label for="fullUrl" class="sr-only">Url</label>
+            <input required type="url" name="fullUrl" id="fullUrl" placeholder="Url"
+            class="form-control col mr-2">
+            <button class="btn btn-success" type="submit">Shrink</button>
+        </form>
+    
+        <table class="table table-striped table-dark table-responsive">
+            <thead>
+                <tr>
+                    <th>Full Url</th>
+                    <th>Short Url</th>
+                    <th>Clicks</th>
+                </tr>
+            </thead>
+    
+            <tbody>
+                <tr>
+                    <td><a href="https://www.corbettreport.com/" >https://www.corbettreport.com/</a></td>
+                    <td><a href="/123499" >123499</a></td>
+                    <td>8</td>
+                </tr>
+            </tbody>
+        </table>
 
-    <table>
-        <thead>
-            <tr>
-                <th>Full Url</th>
-                <th>Short Url</th>
-                <th>Clicks</th>
-            </tr>
-        </thead>
+    </div>
 
-        <tbody>
-            <tr>
-                <td><a href="https://www.corbettreport.com/" >https://www.corbettreport.com/</a></td>
-                <td><a href="/123499" >123499</a></td>
-                <td>8</td>
-            </tr>
-        </tbody>
-    </table>
+    
+   
     
 </body>
 </html>
